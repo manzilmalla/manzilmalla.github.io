@@ -81,7 +81,7 @@
 
 <p>GitHub Repo: [<a href="https://github.com/manzilmalla/Developing-Data-Products">https://github.com/manzilmalla/Developing-Data-Products</a>]</p>
 
-<pre><code class="r">##Codes for compound rate calculation
+<pre><code class="r">##Script for compound rate calculation
 
 compound_amount&lt;-function(principal,rate,start,end,interval,inflation){
   principal*(1+(rate/interval))^(interval*(end-start))*((1+inflation)^(end-start))

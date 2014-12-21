@@ -42,7 +42,7 @@ GitHub Repo: [https://github.com/manzilmalla/Developing-Data-Products]
 
 
 ```{r}
-##Codes for compound rate calculation
+##Script for compound rate calculation
 
 compound_amount<-function(principal,rate,start,end,interval,inflation){
   principal*(1+(rate/interval))^(interval*(end-start))*((1+inflation)^(end-start))
