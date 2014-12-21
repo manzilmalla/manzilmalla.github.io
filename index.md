@@ -39,10 +39,23 @@ Web app: [https://manzilmalla.shinyapps.io/Developing-Data-Products/]
 
 GitHub Repo: [https://github.com/manzilmalla/Developing-Data-Products]
 
+
+
+
+```r
+##Codes for compound rate calculation
+
+compound_amount<-function(principal,rate,start,end,interval,inflation){
+  principal*(1+(rate/interval))^(interval*(end-start))*((1+inflation)^(end-start))
+}
+```
+
 --- .class #id 
 
 ## Example
 For example, the table below shows the yearly balance and interest on the principal amount of $1,000 between 2010 through 2015, compounded semi-annually at the annual interest rate of 2.5%. The table also includes the balance and interest with inflation of 1.5% annually.
+
+
 
 
 
