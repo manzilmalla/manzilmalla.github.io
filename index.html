@@ -61,10 +61,27 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Screenshot of the app</h2>
+    <h2>Codes for the calculation</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="images/capture.png" alt="alt text"></p>
+    <pre><code class="r">##Script for compound rate calculation
+
+compound_amount&lt;-function(principal,rate,start,end,interval,inflation){
+  principal*(1+(rate/interval))^(interval*(end-start))*((1+inflation)^(end-start))
+}
+</code></pre>
+
+<p>Principal = Initial Base Amount</p>
+
+<p>Start =  First Year of the Period</p>
+
+<p>End = Last Year of the Period</p>
+
+<p>Rate = Interest Rate (Annual)</p>
+
+<p>Interval = Frequency of Compounding</p>
+
+<p>Inflation = Annual Inflation Rate</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -80,13 +97,6 @@
 <p>Web app: [<a href="https://manzilmalla.shinyapps.io/Developing-Data-Products/">https://manzilmalla.shinyapps.io/Developing-Data-Products/</a>]</p>
 
 <p>GitHub Repo: [<a href="https://github.com/manzilmalla/Developing-Data-Products">https://github.com/manzilmalla/Developing-Data-Products</a>]</p>
-
-<pre><code class="r">##Script for compound rate calculation
-
-compound_amount&lt;-function(principal,rate,start,end,interval,inflation){
-  principal*(1+(rate/interval))^(interval*(end-start))*((1+inflation)^(end-start))
-}
-</code></pre>
 
   </article>
   <!-- Presenter Notes -->
@@ -171,7 +181,7 @@ compound_amount&lt;-function(principal,rate,start,end,interval,inflation){
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Screenshot of the app'>
+        data-slide=2 title='Codes for the calculation'>
          2
       </a>
     </li>

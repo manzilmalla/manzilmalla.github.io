@@ -26,8 +26,28 @@ The inflation rate can be selected from a range of 0% to 5%.
 
 --- .class #id 
 
-## Screenshot of the app
-![alt text](images/capture.png)
+## Codes for the calculation
+
+```{r}
+##Script for compound rate calculation
+
+compound_amount<-function(principal,rate,start,end,interval,inflation){
+  principal*(1+(rate/interval))^(interval*(end-start))*((1+inflation)^(end-start))
+}
+```
+
+Principal = Initial Base Amount
+
+Start =  First Year of the Period
+
+End = Last Year of the Period
+
+Rate = Interest Rate (Annual)
+
+Interval = Frequency of Compounding
+
+Inflation = Annual Inflation Rate
+
 
 --- .class #id 
 
@@ -42,13 +62,7 @@ GitHub Repo: [https://github.com/manzilmalla/Developing-Data-Products]
 
 
 
-```{r}
-##Script for compound rate calculation
 
-compound_amount<-function(principal,rate,start,end,interval,inflation){
-  principal*(1+(rate/interval))^(interval*(end-start))*((1+inflation)^(end-start))
-}
-```
 
 --- .class #id 
 
