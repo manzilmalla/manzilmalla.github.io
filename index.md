@@ -1,14 +1,15 @@
 ---
-title       : Calculating compound interest
-subtitle    : Developing Data Products (Course Project)
-author      : Manzil Malla
-job         : 
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
+title: "Calculating compound interest"
+author: "Manzil Malla"
+highlighter: highlight.js
+output: pdf_document
+job: null
+knit: slidify::knit2slides
+mode: selfcontained
+hitheme: tomorrow
+subtitle: Developing Data Products (Course Project)
+framework: io2012
+widgets: []
 ---
 
 ## Information Page
@@ -26,7 +27,7 @@ The inflation rate can be selected from a range of 0% to 5%.
 --- .class #id 
 
 ## Screenshot of the app
-![alt text](libraries/highlighters/figures/capture.png)
+![alt text](./figures/capture.png)
 
 --- .class #id 
 
