@@ -26,7 +26,7 @@ The inflation rate can be selected from a range of 0% to 5%.
 --- .class #id 
 
 ## Screenshot of the app
-![alt text](figures/capture.png)
+![alt text](libraries/highlighters/figures/capture.png)
 
 --- .class #id 
 
